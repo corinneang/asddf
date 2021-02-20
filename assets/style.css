@@ -1,5 +1,22 @@
 
 
+@media only screen and (max-width: 1190px) {
+  main {display: none;}
+  body {
+    background-color: rgb(108, 163, 245);
+    color: rgb(245, 245, 245);
+  }
+  #smol {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .justify {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 @font-face{
     font-family: "monobloc";
     src: url('monoblocvariable-VF.ttf') format("truetype-variations");
@@ -83,6 +100,10 @@ a {
     margin: 0;
 
   }
+
+
+  @media only screen and (min-width:1191px ) and (max-width: 2000px) {
+    #smol {display: none;}
 
   section {
     margin: 0px 50px 0px 220px;
@@ -276,5 +297,8 @@ nav {
     margin:0rem;
     border-radius: 10px;
   }
+}
+
+
 
 
