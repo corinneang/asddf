@@ -1,0 +1,280 @@
+
+
+@font-face{
+    font-family: "monobloc";
+    src: url('monoblocvariable-VF.ttf') format("truetype-variations");
+  }
+
+  @font-face {
+    font-family: "monoblocmono";
+    src: url('Monobloc-Mono\ Regular.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "resolve";
+    src: url('Resolve-Book.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "resolve";
+  src: url('Resolve-Bold.woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "resolve";
+  src: url('Resolve-Italic.woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+:root {
+    font-family: 'monobloc';
+    font-variation-settings: "wght" 400;
+
+}
+
+body{
+    color: rgb(245, 245, 245); 
+    -webkit-font-smoothing: antialiased;
+    background:rgb(108, 163, 245);
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+h1 {
+  font-size: 35px;
+  font-variation-settings: "wght" 850;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+  padding: 10px;
+}
+
+
+a {
+    transition-duration: 0.5s;
+    color: rgb(245, 245, 245); 
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(248, 190, 229);
+  }
+  a:active {
+    color: rgb(248, 190, 229);
+  }
+
+  div {
+    width: 100%;
+    margin: 0;
+
+  }
+
+  section {
+    margin: 0px 50px 0px 220px;
+    display: flex;
+    flex-basis: 75vw;
+    justify-content: space-around;
+  }
+
+  .flex {
+    display: flex;
+    flex-basis: 75vw;
+    justify-content: left;
+  }
+
+  .justify {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  .dark {
+    font-variation-settings: "wght" 850;
+  }
+
+
+
+  .heading {
+    font-size: 10rem;
+    font-variation-settings: "wght" 400;
+    line-height: 80%;
+    transform: rotate(-2deg);
+  }
+
+  .pagetop {
+    margin-top: 2rem;
+  }
+
+
+
+
+nav {
+    position: fixed;
+    z-index: 3;
+    font-weight: 600;
+  }
+
+
+  li {
+    font-size: 20px;
+    color: rgb(245, 245, 245) ;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+  }
+
+  .navindent {
+    margin: 3px 0 12px 40px;
+    font-weight: 400;
+  }
+  
+  .wonk { transform: rotate(8deg); }
+  
+  .navbuttons {
+    transition-duration: 0.5s;
+    background:  rgb(248, 248, 248, 10);
+    color: red;
+    border: none;
+    padding: 5px 15px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 3px 5px 3px 25px;
+    font-size: 20px;
+    font-family: 'monobloc';
+  }
+  
+  .monoblocbutton {
+    background: rgb(22, 156, 72);
+    color: rgb(255 ,232, 0);
+    box-shadow: 0px 0px 10px rgb(255 ,232, 0);
+  }
+  
+  .monoblocbutton:hover {
+    background: rgb(255 ,232, 0);
+    color: rgb(22, 156, 72);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(22, 156, 72);
+  }
+  
+  .resolvebutton {
+    background: rgb(243, 88, 27);
+    color:rgb(54, 71, 22);
+    box-shadow: 0px 0px 10px rgb(54, 71, 22);
+  }
+  
+  .resolvebutton:hover {
+    background: rgb(54, 71, 22);
+    color: rgb(243, 88, 27);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(243, 88, 27);
+  }
+  
+  .fluoralbutton {
+    background: rgba(255, 255, 255, 0.521);
+    color:rgb(250, 79, 213);
+    box-shadow: 0px 0px 10px rgb(250, 79, 213);
+  }
+
+
+  .logo {
+    position: fixed;
+    z-index: 3;
+    top: 13px;
+    right: 12px;
+    width: 180px;
+    height: auto;
+    transition: 0.3s all;
+  }
+  
+  g {
+    fill: rgb(245, 245, 245) ;
+  }
+  
+  .logo:hover {
+    transform: rotate(8deg);
+    cursor: pointer; 
+  }
+
+  .bottom {
+    position: fixed;
+    z-index: 3;
+    bottom: 0.1rem;
+    padding-left: 10px;
+    font-size: 4rem;
+    line-height:4.5rem;
+}
+
+
+
+    /* width */
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:  rgb(245, 245, 245) ; 
+  }
+
+.update{
+    padding: 0px 0px 0px 10vw;
+    width: 130vw;
+}
+
+  .updatecontainer{
+      display: inline-block;
+      overflow-x: scroll;
+      overflow-y:hidden;
+    width: 30vw;
+    height:70vh;
+    margin: 15vh 0.5rem 0rem 0.5rem;
+    border-radius: 10px;
+  }
+
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    z-index:-1;
+  }
+
+  .sticky1 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20%;
+    z-index:-1;
+  }
+
+  .sticky2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 35%;
+    z-index:-2;
+  }
+  
+  .container2 {
+    max-width: 40vw;
+    padding: 1rem ;
+    margin:0rem;
+    border-radius: 10px;
+  }
+
+

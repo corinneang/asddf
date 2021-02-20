@@ -1,0 +1,1 @@
+document.querySelector('input').addEventListener('input', e => document.querySelector('p').style.fontSize = e.target.value + 'em');
