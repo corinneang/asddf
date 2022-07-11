@@ -299,6 +299,8 @@ nav {
   }
 }
 
-
+[contenteditable] {
+    outline: 0px solid transparent;
+}
 
 
